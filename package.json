@@ -1,0 +1,23 @@
+{
+  "name": "eleventy-test",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "npx eleventy --serve"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Tehes/eleventy-test.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Tehes/eleventy-test/issues"
+  },
+  "homepage": "https://github.com/Tehes/eleventy-test#readme",
+  "devDependencies": {
+    "@11ty/eleventy": "^1.0.2"
+  }
+}
