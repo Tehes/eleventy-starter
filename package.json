@@ -1,23 +1,26 @@
 {
-  "name": "eleventy-test",
+  "name": "eleventy-starter",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": ".eleventy.js",
+  "directories": {
+    "doc": "docs"
+  },
   "scripts": {
     "start": "npx eleventy --serve"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Tehes/eleventy-test.git"
+    "url": "git+https://github.com/Tehes/eleventy-starter.git"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/Tehes/eleventy-test/issues"
+    "url": "https://github.com/Tehes/eleventy-starter/issues"
   },
-  "homepage": "https://github.com/Tehes/eleventy-test#readme",
-  "devDependencies": {
+  "homepage": "https://github.com/Tehes/eleventy-starter#readme",
+  "dependencies": {
     "@11ty/eleventy": "^1.0.2"
   }
 }

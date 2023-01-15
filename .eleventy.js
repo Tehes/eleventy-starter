@@ -1,6 +1,7 @@
 module.exports = function(eleventyConfig) {
-    // Copy css folder
+    // Copy css and img folders
     eleventyConfig.addPassthroughCopy("src/css/");
+    eleventyConfig.addPassthroughCopy("src/img/");
   
     return {
       markdownTemplateEngine: 'njk',
