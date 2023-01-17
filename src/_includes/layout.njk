@@ -1,0 +1,24 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta name='viewport' content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="{{ site.url }}/css/style.css">
+	<title>{{ title }}</title>
+</head>
+
+<body>
+	<header>
+		<ul>
+			{%- for nav in collections.navigation -%}
+			<li><a href="{{ nav.url }}">{{ nav.data.title }}</a></li>
+			{%- endfor -%}
+		</ul>
+	</header>
+	<main>
+		{{ content | safe }}
+	</main>
+</body>
+
+</html>

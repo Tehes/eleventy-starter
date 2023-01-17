@@ -2,6 +2,9 @@ module.exports = function(eleventyConfig) {
     // Copy css and img folders
     eleventyConfig.addPassthroughCopy("src/css/");
     eleventyConfig.addPassthroughCopy("src/img/");
+
+    //watch for changes in CSS
+    eleventyConfig.addWatchTarget("src/css/");
   
     return {
       markdownTemplateEngine: 'njk',
