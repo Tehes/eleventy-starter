@@ -1,6 +1,6 @@
 ---
 layout: layout.njk
-title: The Best Eleventy Demo
+title: Willkommen
 tags: navigation
 ---
 

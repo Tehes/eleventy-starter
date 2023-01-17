@@ -1,4 +1,6 @@
 get npm: npm init -y
 install eleventy: npm install --save-dev @11ty/eleventy
-serve from npm scripts. put this in package.json under "scripts": "start": "npx eleventy --serve"
+serve from npm scripts. put this in package.json under "scripts": 
+    "start": "npx eleventy --serve",
+    "build": "npx eleventy"
 to stop the terminal from watching, press ctrl + c
