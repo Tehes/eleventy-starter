@@ -20,6 +20,6 @@ module.exports = function(eleventyConfig) {
         data: "_data",
         output: 'docs'
       },
-      pathPrefix: '/eleventy-starter/', // omit this line if using custom domain
+      pathPrefix: '/eleventy-starter/' // omit this line if using custom domain
     };
   };

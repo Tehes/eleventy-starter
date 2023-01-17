@@ -4,7 +4,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta name='viewport' content="width=device-width, initial-scale=1.0">
-	<link rel="stylesheet" href="{{ site.url }}/css/style.css">
+	<link rel="stylesheet" href="{{ "/css/style.css" | url }}">
 	<title>{{ title }}</title>
 </head>
 
@@ -12,7 +12,7 @@
 	<header>
 		<ul>
 			{%- for nav in collections.navigation -%}
-			<li><a href="{{ nav.url }}">{{ nav.data.title }}</a></li>
+			<li><a href="{{ nav.url | url }}">{{ nav.data.title }}</a></li>
 			{%- endfor -%}
 		</ul>
 	</header>
