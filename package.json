@@ -11,6 +11,9 @@
     "start": "npm run clean && npx eleventy --serve",
     "build": "npm run clean npx eleventy"
   },
+  "jshintConfig": {
+    "esversion": 6
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/Tehes/eleventy-starter.git"

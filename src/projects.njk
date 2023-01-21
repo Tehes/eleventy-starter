@@ -1,0 +1,13 @@
+---
+layout: layout.njk
+title: Projekte
+tags: navigation
+---
+
+<h1>{{ title }}</h1>
+
+<ul>
+    {% for img in card.imgs %}
+    <p><img src="{{ "/img/" | url }}{{ img }}" width="100px"></p>
+    {% endfor %}
+</ul>
