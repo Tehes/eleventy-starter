@@ -7,8 +7,9 @@
     "doc": "docs"
   },
   "scripts": {
-    "start": "npx eleventy --serve",
-    "build": "npx eleventy"
+    "clean": "rm -rf docs/",
+    "start": "npm run clean && npx eleventy --serve",
+    "build": "npm run clean npx eleventy"
   },
   "repository": {
     "type": "git",

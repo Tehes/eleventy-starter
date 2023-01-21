@@ -5,6 +5,7 @@ module.exports = function(eleventyConfig) {
 
     //watch for changes in CSS
     eleventyConfig.addWatchTarget("src/css/");
+    eleventyConfig.addWatchTarget("src/img/");
   
     return {
       markdownTemplateEngine: 'njk',
