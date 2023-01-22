@@ -2,12 +2,13 @@
 layout: layout.njk
 title: Test
 tags: navigation
+imgFolder: img/gallery/
 ---
 
 <h1>{{ title }}</h1>
 
 <ul>
     {% for img in gallery %}
-        <img src="{{ "/img" | url }}/{{ page.fileSlug }}/{{ img }}" width="100px">
+        <img src="{{ '/./' | url }}{{ imgFolder }}{{ img }}" width="100px">
     {% endfor %}
 </ul>
