@@ -1,41 +1,76 @@
 :root {
     --bg-color: hsl(0, 0%, 100%);
     --font-color: hsl(0, 0%, 20%);
-  }
-  
-  html {
-       margin:0;
-       padding:0;
-       /* mobile viewport bug fix */
-      height: -webkit-fill-available;
-  }
-  
-  body {
-      background-color: var(--bg-color);
-      margin:0;
-      padding:0;
-      color: var(--font-color);
-      font-size: 100%;
-      min-height: 100vh;
-      /* mobile viewport bug fix */
-      min-height: -webkit-fill-available;
-  }
-  
-  /*
+}
+
+html {
+    margin: 0;
+    padding: 0;
+    /* mobile viewport bug fix */
+    height: -webkit-fill-available;
+}
+
+body {
+    background-color: var(--bg-color);
+    margin: 0;
+    padding: 0;
+    color: var(--font-color);
+    font-size: 100%;
+    min-height: 100vh;
+    /* mobile viewport bug fix */
+    min-height: -webkit-fill-available;
+    font-family: Sans-Serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+/*
   -------------------------------------------------------------------
-  YOUR SECTIONS
+  HEADER
   -------------------------------------------------------------------
   */
-  
-  /*
+
+header {
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    background-color: #eee;
+    align-items: center;
+}
+
+nav ul {
+    display: flex;
+    list-style-type: none;
+    gap: 2vw;
+    padding: 0;
+}
+
+nav :is(a:link, a:visited, a:hover, a:active) {
+    text-decoration: none;
+    color: var(--font-color);
+}
+
+/*
+  -------------------------------------------------------------------
+  MAIN
+  -------------------------------------------------------------------
+  */
+
+main {
+    max-width: 70ch;
+}
+
+/*
   -------------------------------------------------------------------
   MEDIA QUERIES
   -------------------------------------------------------------------
   */
-  
-  @media (prefers-color-scheme: dark) {
-      :root {
-          --bg-color: hsl(0, 0%, 20%);
-          --font-color: hsl(0, 0%, 90%);
-      }
-  }
+
+@media (prefers-color-scheme: dark) {
+    :root {
+        --bg-color: hsl(0, 0%, 20%);
+        --font-color: hsl(0, 0%, 90%);
+    }
+}

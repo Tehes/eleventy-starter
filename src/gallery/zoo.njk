@@ -1,0 +1,14 @@
+---
+layout: layout.njk
+title: Zoo
+tags: navigation
+imgFolder: img/zoo/
+---
+
+<h1>{{ title }}</h1>
+
+<ul>
+    {% for img in gallery %}
+        <img src="{{ '/./' | url }}{{ imgFolder }}{{ img }}" width="100px">
+    {% endfor %}
+</ul>

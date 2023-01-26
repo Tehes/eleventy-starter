@@ -10,11 +10,13 @@
 
 <body>
 	<header>
+		<nav>
 		<ul>
 			{%- for nav in collections.navigation -%}
 			<li><a href="{{ nav.url | url }}">{{ nav.data.title }}</a></li>
 			{%- endfor -%}
 		</ul>
+		</nav>
 	</header>
 	<main>
 		{{ content | safe }}
